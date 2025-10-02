@@ -4,7 +4,11 @@ Paste a TikTok link, get back two files:
 1. `video.mp4` (picture + sound)  
 2. `audio.mp3` (sound only)
 
+<br>
+
 Works from your browser via GitHub Actions, no servers, no API keys.
+
+<br>
 
 > [!IMPORTANT]
 > The workflow does not store your link or files permanently.
