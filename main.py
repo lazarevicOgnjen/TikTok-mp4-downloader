@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
-import os
-import subprocess
-import sys
+import os, subprocess, sys
 
 URL = os.getenv("TIKTOK_URL")
 if not URL:
-    sys.exit("❌  TIKTOK_URL environment variable missing")
+    sys.exit("❌  TIKTOK_URL missing")
 
-# 1) video+audio MP4
+# 1) best *pre-muxed* MP4 (video + audio)
 subprocess.run(
-    ["yt-dlp", "-f", "bv*[ext=mp4]+ba", "--no-part", "-o", "video.mp4", URL.strip()],
+    ["yt-dlp", "-f", "bv*+ba/b", "--no-part", "-o", "video.mp4", URL.strip()],
     check=True,
 )
 
