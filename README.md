@@ -3,10 +3,9 @@
 Paste a TikTok link, get back two files:  
 1. `video.mp4` (picture + sound)  
 2. `audio.mp3` (sound only)
-
 <br>
 
-Works from your browser via GitHub Actions, no servers, no API keys.
+Works from your browser via GitHub Actions, no servers, no API keys. 
 
 <br>
 
@@ -18,7 +17,6 @@ Works from your browser via GitHub Actions, no servers, no API keys.
 4. When the job ends, download the artefacts:  
    - `tiktok-video-mp4` (video with sound)  
    - `tiktok-audio-mp3` (audio only)
-
 <br>
 
 > [!IMPORTANT]
